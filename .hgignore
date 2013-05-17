@@ -1,5 +1,6 @@
 syntax: glob
 .hgignore
+.*
 */target/**
 */.settings/**
 */.classpath
@@ -7,3 +8,4 @@ syntax: glob
 *.log
 *.orig
 *~
+.*
