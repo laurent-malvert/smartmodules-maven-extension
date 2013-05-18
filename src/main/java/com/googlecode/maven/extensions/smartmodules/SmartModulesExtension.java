@@ -26,7 +26,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.googlecode.maven.extensions.automodules;
+package com.googlecode.maven.extensions.smartmodules;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -87,7 +87,8 @@ public class SmartModulesExtension
         logger.info("");
     }
 
-    private Set<MavenProject> aggregate(final MavenSession session, final List<MavenProject> roots, final Set<MavenProject> aggregator) throws MavenExecutionException {
+    private Set<MavenProject> aggregate(final MavenSession session, final List<MavenProject> roots, final Set<MavenProject> aggregator)
+            throws MavenExecutionException {
         final Map<MavenProject, List<File>> mm = detectModules(roots);
 
         logger.info("");
@@ -116,11 +117,10 @@ public class SmartModulesExtension
         return (aggregator);
     }
 
-    private Map<MavenProject, List<File>> detectModules(final List<MavenProject> projects) {
+    private static Map<MavenProject, List<File>> detectModules(final List<MavenProject> projects) {
         final Map<MavenProject, List<File>> mm = Maps.newHashMap();
 
         for (final MavenProject p : projects) {
-            logger.info("looking for modules in: " + p.getName());
             mm.put(
                 p,
                 Arrays.asList(p.getBasedir().listFiles(new FileFilter() {

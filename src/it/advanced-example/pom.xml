@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.googlecode.maven.extensions.smartmodules.examples</groupId>
+  <artifactId>advanced-example</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>advanced-example</name>
+  <description>
+      Advanced example and integration test for the
+      maven-smartmodules-extension.
+
+      Contains a multi-module build tree with several levels of
+      descendant modules, and some edge cases like:
+
+       - inter-module dependencies (to assert we didn't break the
+         reactor's project sorting capabilities),
+       - build order assumptions,
+
+       - some POM inheritance between modules (to verify that
+         properties and other things are correctly passed to descendant
+         projects amd project sorting),
+
+       - some predefined modules (to make sure that auto-detected
+         modules are merged with explictly declared modules.
+  </description>
+
+  <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+      <extensions>
+          <extension>
+              <groupId>com.googlecode.maven.extensions</groupId>
+              <artifactId>maven-smartmodules-extension</artifactId>
+              <version>0.1-SNAPSHOT</version>
+          </extension>
+      </extensions>
+  </build>
+
+</project>
