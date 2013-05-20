@@ -5,13 +5,13 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.googlecode.maven.extensions.smartmodules.examples.basicexample</groupId>
+  <groupId>com.googlecode.smartmodules-maven-extension.examples.basicexample</groupId>
   <artifactId>module2</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <name>module1</name>
   <description>
-    Integration test for the maven-smartmodules-extension - Module 2
+    Integration test for the smartmodules-maven-extension - Module 2
   </description>
 
   <properties>
