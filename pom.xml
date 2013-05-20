@@ -6,11 +6,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.googlecode.maven.extensions</groupId>
-  <artifactId>maven-smartmodules-extension</artifactId>
+  <artifactId>smartmodules-maven-extension</artifactId>
   <version>0.1-SNAPSHOT</version>
 
   <name>smartmodules</name>
-  <description>Smart automated discovery for multi-module builds</description>
+  <description>Automated discovery for multi-module builds.</description>
 
   <prerequisites>
     <maven>3.0.5</maven>
@@ -30,27 +30,27 @@
   </developers>
 
   <licenses>
-      <license>
-          <name>The MIT/X11 License</name>
-          <url>http://opensource.org/licenses/MIT</url>
-          <distribution>repo</distribution>
-          <comments>Available for personal and commercial use.</comments>
-      </license>
+    <license>
+      <name>The MIT/X11 License</name>
+      <url>http://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+      <comments>Available for personal and commercial use.</comments>
+    </license>
   </licenses>
 
   <scm>
     <connection>
-        scm:hg:https://bitbucket.org/laurent.malvert/maven-smartmodules-extension
+      scm:hg:https://bitbucket.org/laurent.malvert/maven-smartmodules-extension
     </connection>
     <developerConnection>
-        scm:hg:https://bitbucket.org/laurent.malvert/maven-smartmodules-extension
+      scm:hg:https://bitbucket.org/laurent.malvert/maven-smartmodules-extension
     </developerConnection>
     <tag>HEAD</tag>
     <url>https://bitbucket.org/laurent.malvert/maven-smartmodules-extension</url>
   </scm>
-  
+
   <properties>
-      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <dependencies>
@@ -77,8 +77,8 @@
           <settingsFile>src/it/settings.xml</settingsFile>
           <localRepositoryPath>${project.build.directory}/local-repo</localRepositoryPath>
           <goals>
-              <goal>clean</goal>
-              <goal>verify</goal>
+            <goal>clean</goal>
+            <goal>verify</goal>
           </goals>
         </configuration>
         <executions>

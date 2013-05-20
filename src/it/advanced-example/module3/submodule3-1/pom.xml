@@ -12,11 +12,11 @@
 
   <name>submodule3-1</name>
   <description>
-      Advanced integration test for the maven-smartmodules-extension - SubModule 3-1
+    Advanced integration test for the maven-smartmodules-extension - SubModule 3-1
   </description>
 
   <properties>
-      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
 </project>

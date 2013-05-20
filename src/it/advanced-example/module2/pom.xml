@@ -11,29 +11,29 @@
 
   <name>module2</name>
   <description>
-      Advanced integration test for the maven-smartmodules-extension - Module 2
+    Advanced integration test for the maven-smartmodules-extension - Module 2
   </description>
 
   <dependencies>
-      <dependency>
-          <groupId>com.googlecode.maven.extensions.smartmodules.examples.advancedexample</groupId>
-          <artifactId>module1</artifactId>
-          <version>${project.version}</version>
-      </dependency>
-      <dependency>
-          <groupId>com.googlecode.maven.extensions.smartmodules.examples.advancedexample</groupId>
-          <artifactId>module3</artifactId>
-          <version>${project.version}</version>
-      </dependency>
-      <dependency>
-          <groupId>com.googlecode.maven.extensions.smartmodules.examples.advancedexample</groupId>
-          <artifactId>module4</artifactId>
-          <version>${project.version}</version>
-      </dependency>
+    <dependency>
+      <groupId>com.googlecode.maven.extensions.smartmodules.examples.advancedexample</groupId>
+      <artifactId>module1</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.googlecode.maven.extensions.smartmodules.examples.advancedexample</groupId>
+      <artifactId>module3</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.googlecode.maven.extensions.smartmodules.examples.advancedexample</groupId>
+      <artifactId>module4</artifactId>
+      <version>${project.version}</version>
+    </dependency>
   </dependencies>
 
   <properties>
-      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
 </project>

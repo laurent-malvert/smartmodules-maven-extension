@@ -29,19 +29,19 @@
        - some predefined modules (to make sure that auto-detected
          modules are merged with explictly declared modules.
   </description>
-
+  
   <properties>
-      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <build>
-      <extensions>
-          <extension>
-              <groupId>com.googlecode.maven.extensions</groupId>
-              <artifactId>maven-smartmodules-extension</artifactId>
-              <version>0.1-SNAPSHOT</version>
-          </extension>
-      </extensions>
+    <extensions>
+      <extension>
+        <groupId>com.googlecode.maven.extensions</groupId>
+        <artifactId>smartmodules-maven-extension</artifactId>
+        <version>0.1-SNAPSHOT</version>
+      </extension>
+    </extensions>
   </build>
 
 </project>
