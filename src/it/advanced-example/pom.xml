@@ -39,7 +39,7 @@
       <extension>
         <groupId>com.googlecode.smartmodules-maven-extension</groupId>
         <artifactId>smartmodules-maven-extension</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>@project.version@</version>
       </extension>
     </extensions>
   </build>
