@@ -11,6 +11,7 @@
 
   <name>smartmodules</name>
   <description>Automated discovery for multi-module builds.</description>
+  <url>http://smartmodules-maven-extension.googlecode.com/</url>
 
   <parent>
     <groupId>org.sonatype.oss</groupId>
@@ -19,6 +20,13 @@
   </parent>
 
   <inceptionYear>2013</inceptionYear>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <smme.it.root>src/it<smme.it.root>
+    <smme.host>smartmodules-maven-extension.googlecode.com</smme.host>
+    <smme.target>${project.build.directory}</smme.target>
+  </properties>
 
   <prerequisites>
     <maven>3.0.5</maven>
@@ -47,23 +55,15 @@
   </licenses>
 
   <scm>
-    <connection>
-      scm:hg:http://smartmodules-maven-extension.googlecode.com/hg/
-    </connection>
-    <developerConnection>
-      scm:hg:https://smartmodules-maven-extension.googlecode.com/hg/
-    </developerConnection>
-    <url>http://smartmodules-maven-extension.googlecode.com/hg/</url>
+    <connection>scm:hg:http://${smme.host}/hg/</connection>
+    <developerConnection>scm:hg:https://${smme.host}/hg/</developerConnection>
+    <url>http://${smme.host}/hg/</url>
   </scm>
 
   <issueManagement>
     <system>Google Code Issue Tracker</system>
     <url>http://code.google.com/p/smartmodules-maven-extension/issues/list</url>
   </issueManagement>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
 
   <dependencies>
     <dependency>
@@ -84,10 +84,10 @@
         <artifactId>maven-invoker-plugin</artifactId>
         <version>1.8</version>
         <configuration>
-          <projectsDirectory>src/it</projectsDirectory>
-          <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
-          <settingsFile>src/it/settings.xml</settingsFile>
-          <localRepositoryPath>${project.build.directory}/local-repo</localRepositoryPath>
+          <projectsDirectory>${smme.it.root}</projectsDirectory>
+          <cloneProjectsTo>${smme.target}/it</cloneProjectsTo>
+          <settingsFile>${smme.it.root}/settings.xml</settingsFile>
+          <localRepositoryPath>${smme.target}/local-repo</localRepositoryPath>
           <goals>
             <goal>clean</goal>
             <goal>install</goal>
