@@ -23,7 +23,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <smme.it.root>src/it<smme.it.root>
+    <smme.it.root>src/it</smme.it.root>
     <smme.host>smartmodules-maven-extension.googlecode.com</smme.host>
     <smme.target>${project.build.directory}</smme.target>
   </properties>
