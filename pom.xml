@@ -12,6 +12,8 @@
   <name>smartmodules</name>
   <description>Automated discovery for multi-module builds.</description>
 
+  <inceptionYear>2013</inceptionYear>
+
   <prerequisites>
     <maven>3.0.5</maven>
   </prerequisites>
@@ -40,14 +42,18 @@
 
   <scm>
     <connection>
-      scm:hg:https://bitbucket.org/laurent.malvert/maven-smartmodules-extension
+      scm:hg:http://smartmodules-maven-extension.googlecode.com/hg/
     </connection>
     <developerConnection>
-      scm:hg:https://bitbucket.org/laurent.malvert/maven-smartmodules-extension
+      scm:hg:https://smartmodules-maven-extension.googlecode.com/hg/
     </developerConnection>
-    <tag>HEAD</tag>
-    <url>https://bitbucket.org/laurent.malvert/maven-smartmodules-extension</url>
+    <url>http://smartmodules-maven-extension.googlecode.com/hg/</url>
   </scm>
+
+  <issueManagement>
+    <system>Google Code Issue Tracker</system>
+    <url>http://code.google.com/p/smartmodules-maven-extension/issues/list</url>
+  </issueManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
