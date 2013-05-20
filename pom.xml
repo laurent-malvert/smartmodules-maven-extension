@@ -91,7 +91,6 @@
           <goals>
             <goal>clean</goal>
             <goal>install</goal>
-            <goal>verify</goal>
           </goals>
         </configuration>
         <executions>
